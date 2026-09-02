@@ -1,3 +1,112 @@
+
+/* Footer de contacto */
+
+#contacto {
+  margin-left: 270px;
+  padding: 40px 60px 150px;
+  background: #10101a;
+  border-top: 1px solid var(--borde);
+}
+
+.footer-contenido {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  max-width: 900px;
+}
+
+.footer-contenido h3 {
+  margin: 0 0 12px;
+}
+
+.footer-contenido p {
+  margin: 8px 0;
+  color: var(--texto-suave);
+  font-size: 14px;
+}
+
+.copyright {
+  max-width: 900px;
+  margin-top: 30px;
+  padding-top: 18px;
+  border-top: 1px solid var(--borde);
+  color: var(--texto-suave);
+  font-size: 13px;
+}
+
+/* Móvil */
+
+@media (max-width: 900px) {
+  .header-nav,
+  .btn-create-playlist,
+  .header-divider {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .contenido,
+  #contacto {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contenido {
+    padding: 30px 22px;
+  }
+
+  #contacto {
+    padding: 35px 22px 180px;
+  }
+
+  .reproductor-fijo {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .controles-derecha {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .global-header {
+    padding: 0 18px;
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  .barra-superior {
+    margin-bottom: 25px;
+  }
+
+  .destacado {
+    min-height: 220px;
+    padding: 75px 25px 28px;
+  }
+
+  .ecualizador {
+    right: 25px;
+  }
+
+  .fila-cancion {
+    padding: 12px;
+  }
+
+  .portada {
+    width: 52px;
+    height: 52px;
+  }
+
+  .footer-contenido {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 /* Barra lateral */
 
 .sidebar {

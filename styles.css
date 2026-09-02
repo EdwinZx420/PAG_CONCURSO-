@@ -329,4 +329,132 @@ input[type="range"] {
 
 #control-volumen {
   width: 115px;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --fondo: #080811;
+  --superficie: #11111d;
+  --superficie-clara: #1a1a2a;
+  --borde: #29293c;
+  --texto: #f7f7fb;
+  --texto-suave: #a2a2c0;
+  --rosa: #f21878;
+  --rosa-oscuro: #bd125d;
+  --morado: #5b1d8b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 105px;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* Header */
+
+.global-header {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding: 0 28px;
+  background: #0d0d17;
+  border-bottom: 1px solid var(--borde);
+}
+
+.header-left-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 175px;
+}
+
+.brand-badge {
+  padding: 4px 7px;
+  border-radius: 5px;
+  background: var(--rosa);
+  color: white;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.app-title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 13px;
+  border-radius: 8px;
+  color: var(--texto-suave);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header-nav li.active a,
+.header-nav a:hover {
+  background: rgba(242, 24, 120, 0.13);
+  color: var(--rosa);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.btn-create-playlist,
+.icon-btn {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.btn-create-playlist {
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--rosa);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.btn-create-playlist:hover {
+  background: #ff318c;
+}
+
+.header-divider {
+  width: 1px;
+  height: 28px;
+  background: var(--borde);
+}
+
+.icon-btn {
+  background: transparent;
+  color: var(--texto);
+  font-size: 18px;
 }
